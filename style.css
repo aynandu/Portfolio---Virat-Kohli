@@ -1,11 +1,207 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --bgmain-color:rgb(17, 3, 38);
+}
 body{
     margin: 0;
 }
 .main_container{
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: var(--bgmain-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
+.nav_container{
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+    display: flex;
+}
+.logo_cont{
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    
+}
+.insd_logo{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.ring{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    border: 3px solid red;
+    background-color: transparent; 
+}
+.ring:nth-child(2){
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+}
+.ring:nth-child(4){
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+}
+.ring:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.nav{
+    width: 70%;
+    height: 100%;
+    background-color: transparent;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_inside{
+    list-style-type: none;
+    
+}
+.nav_inside>li{
+    display: inline;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 10px;
+    font-family: "Audiowide", sans-serif;
+    cursor: pointer;
+    color: white;
+
+}
+.nav_inside>li a{
+    text-decoration: none;
+    color: white;
+}
+.nav_inside>li a:hover{
+    color: red;
+}
+.content_container{
+    width: 100%;
+    height: 62%;
+    background-color: transparent;
+    display: flex;
+}
+.lft_cont{
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.lft_cont>div{
+    padding-left: 40px;
+    line-height: 0;
+}
+.lft_cont>div h1{
+    font-size: 32px;
+    padding: 25px;
+    font-family: Merriweather, serif;
+    color: white;
+}
+.lft_cont>div h4{
+    font-size: 16px;
+    padding: 25px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-weight: 300;
+}
+.lft_cont>div h3{
+    font-size: 20px;
+    padding: 25px;
+    font-family: Spectral, serif;
+    text-indent: 20px;
+    line-height: 30px;
+    color: white;
+    font-weight: 500;
+}
+    
+.cnt_cont{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;  
+    display: flex; 
+    align-items: last baseline;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.circleOne{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(255, 24, 24,0.8);
+    position: absolute;
+    bottom: 25%;
+    right: 38%;
+}
+.circleTwo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(238, 110, 110, 0.1);
+    border: 1px dotted rgba(255, 255, 255,0.3);
+    position: absolute;
+    bottom: 45%;
+    right: 25%;
+}
+
+/* .circleTwo:hover{
+    transform: translateY(20px);
+} */
+.image{
+    width: 320px;
+    height: 500px;
+    transition:0.6s ease-in-out; 
+    z-index: 2; 
+}
+.image:hover{
+    transform: scale(1.2);
+} 
+.image:hover + .circleOne{
+    transform: scale(1.2);
+}
+
+.rgt_cont{
+    width: 5%;
+    height: 100%;
+    background-color: rgb(81, 32, 204);  
+}
+.content_btm_container{
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    
+}
+.cont_box{
+    width: 200px;
+    height: 80%;
+    background-color: darkmagenta;
+}
+/*
+.footer_container{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+*/
