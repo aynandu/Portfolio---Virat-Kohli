@@ -1,9 +1,223 @@
 .main_container2{
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    background-color: rgb(17, 3, 38);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     *overflow: hidden;
+}
+.statics{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s ease-in-out;
+}
+.matches{
+    width: 100%;
+    height: 30%;
+    padding: 50px 0 10px 10px;
+}
+h3{
+    color:rgba(17, 3, 38,0.6)
+}
+.odi_mch{
+    width:80% ;
+    height:50px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 1px;
+    animation: odi_matches 1.8s ease-in-out  1;
+}
+.tst_mch{
+    width:60% ;
+    height:50px;
+    background-color: white;
+    margin-bottom: 10px;  
+    text-align: center;
+    padding-top: 1px;
+    overflow: hidden;
+    animation: test_matches 1.6s ease-in-out  1;
+}
+.t20_mch{
+    width:65% ;
+    height:50px;
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 1px;
+    overflow: hidden;
+    animation: t20_matches 1.4s ease-in-out  1;
+
+}
+.runs{
+    width: 100%;
+    height: 30%;
+    padding: 50px 0 10px 10px;
+}
+.odi_runs{
+    width:80% ;
+    height:50px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 1px;
+    animation: odi_run 1.8s ease-in-out  1;
+    
+}
+
+.tst_runs{
+    width:72% ;
+    height:50px;
+    background-color: white;
+    margin-bottom: 10px;  
+    text-align: center;
+    padding-top: 1px;
+    overflow: hidden;
+    animation: test_run 1.6s ease-in-out  1;
+}
+.t20_runs{
+    width:55% ;
+    height:50px;
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 1px;
+    overflow: hidden;
+    animation: t20_run 1.4s ease-in-out  1;
+
+}
+.century{
+    width: 100%;
+    height: 30%;
+    padding: 50px 0 10px 10px;
+}
+.odi_100{
+    width:80% ;
+    height:50px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 1px;
+    animation: odi_run 1.8s ease-in-out  1;
+    
+}
+
+.tst_100{
+    width:72% ;
+    height:50px;
+    background-color: white;
+    margin-bottom: 10px;  
+    text-align: center;
+    padding-top: 1px;
+    overflow: hidden;
+    animation: test_run 1.6s ease-in-out  1;
+}
+.t20_100{
+    width:30% ;
+    height:50px;
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 1px;
+    overflow: hidden;
+    animation: t20_hnd 1.4s ease-in-out  1;
+
+}
+.imagecarer{
+    width: 30%;
+    height: 100%;
+    
+    display: flex; 
+    align-items: last baseline;
+    justify-content: center;
+    position: relative;
+}
+.image_pg2{
+    width: 380px;
+    height: 800px;
+    transition:0.6s ease-in-out; 
+    z-index: 2; 
+}
+.image_pg2:hover{
+    transform: scale(1.2);
+} 
+@keyframes odi_matches{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;  
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes test_matches{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;  
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes t20_matches{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;  
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes t20_run{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;  
+    }
+    100%{
+        width: 55%;
+    }
+}
+@keyframes test_run{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;  
+    }
+    100%{
+        width: 72%;
+    }
+}
+@keyframes odi_run{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;  
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes t20_hnd{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;  
+    }
+    100%{
+        width: 30%;
+    }
 }
